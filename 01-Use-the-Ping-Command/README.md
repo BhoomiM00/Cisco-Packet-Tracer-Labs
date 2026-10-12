@@ -182,7 +182,7 @@ Run `ipconfig /all` on both PC1 and PC2 and compare their network settings.
 | Default gateway | `192.168.1.1` | `192.168.1.1` |
 | DNS server | `192.15.2.5` | `191.15.2.5` |
 
-![PC2 ping and IP configuration before correction](images/pc2-ping-and-ipconfig-before.png)
+![PC2 incorrect DNS](images/before/05-pc2-incorrect-dns.png)
 
 **Finding:**
 
