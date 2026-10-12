@@ -112,7 +112,7 @@ The web server IP address shown in the supplied activity is `192.15.2.10`.
 
 **Observation:** PC2 is identified as unable to access the website in the supplied activity.
 
-![PC2 browser before correction](images/pc2-browser-before.png)
+![PC2 browser failure](images/before/01-pc2-browser-failure.png)
 
 ### Part 2: Ping the Web Server from PC1
 
