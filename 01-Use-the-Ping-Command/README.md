@@ -143,7 +143,7 @@ The web server IP address shown in the supplied activity is `192.15.2.10`.
 - Default gateway: `192.168.1.1`
 - DNS server: `192.15.2.5`
 
-![PC1 ping and IP configuration](images/pc1-ping-and-ipconfig.png)
+![PC1 ping and IP configuration](images/before/02-pc1-working-ping.png)
 
 ### Part 3: Ping the Web Server from PC2
 
