@@ -280,13 +280,38 @@ The correction must be verified by repeating the hostname ping and opening the w
 
 ## 12. Evidence Checklist
 
--  Network topology screenshot
--  PC2 browser before correction
--  PC1 ping and IP configuration
--  PC2 ping and IP configuration before correction
--  PC2 DNS configuration after correction
--  Successful hostname ping after correction
--  Website opened successfully after correction
+
+## Before Correction
+
+### PC2 Browser Failure
+![PC2 browser failure](images/before/01-pc2-browser-failure.png)
+
+### PC1 Successful Ping
+![PC1 working ping](images/before/02-pc1-working-ping.png)
+
+### PC1 Network Configuration
+![PC1 network configuration](images/before/03-pc1-network-configuration.png)
+
+### PC2 Ping Test
+![PC2 ping test](images/before/04-pc2-ping-test.png)
+
+### PC2 Incorrect DNS Configuration
+![PC2 incorrect DNS](images/before/05-pc2-incorrect-dns.png)
+
+## After Correction
+
+### Corrected DNS Configuration
+![PC2 corrected DNS](images/after/01-pc2-corrected-dns.png)
+
+### Successful Ping to Server IP
+![PC2 ping server IP](images/after/02-pc2-ping-server-ip.png)
+
+### Successful Ping by Hostname
+![PC2 ping website hostname](images/after/03-pc2-ping-website-hostname.png)
+
+### Successful Website Access
+![PC2 website access success](images/after/04-pc2-website-access-success.png)
+
 
 ## 13. Skills Learned
 
