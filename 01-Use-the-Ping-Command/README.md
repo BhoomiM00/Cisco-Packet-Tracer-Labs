@@ -270,13 +270,7 @@ A final hostname ping and browser test should be performed after the correction 
 
 ## 11. Conclusion
 
-This lab demonstrates how the `ping` command and `ipconfig /all` can be used to troubleshoot network connectivity issues.
-
-By comparing PC1 and PC2, an incorrect DNS server address was identified on PC2. PC1 uses `192.15.2.5`, while PC2 was configured with `191.15.2.5`.
-
-The successful IP ping tests show that PC2 can reach the web server by IP address. Correcting the DNS server address to `192.15.2.5` is the appropriate next step to resolve the hostname and restore website access.
-
-The correction must be verified by repeating the hostname ping and opening the website in PC2's browser.
+The lab successfully demonstrated how the `ping` command and `ipconfig /all` can be used to troubleshoot network connectivity. The issue was traced to an incorrect DNS server address on PC2. After correcting the DNS server to `192.15.2.5`, the hostname ping and website access tests completed successfully. This confirmed that the DNS configuration error had been resolved.
 
 ## 12. Evidence Checklist
 
