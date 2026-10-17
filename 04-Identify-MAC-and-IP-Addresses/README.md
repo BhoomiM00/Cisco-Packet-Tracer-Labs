@@ -58,18 +58,27 @@ For local communication, the source and destination PCs belong to the same IP ne
 
 The IPv4 source and destination addresses identify the two communicating PCs. Because the destination is on the same local network, the source does not need to send the frame to the default gateway.
 
-**Example addressing from the activity:**
+![Local PDU observations](images/local-pdu-table.png)
 
-| Field | Value |
-|---|---|
-| Source IPv4 address | `172.16.31.3` |
-| Destination IPv4 address | `172.16.31.2` |
-| Source MAC address | Record from Packet Tracer |
-| Destination MAC address | Record from Packet Tracer |
+### Local Network: PDU Details
+
+The PDU Information window displays the ICMP echo reply received by PC `172.16.31.3` from PC `172.16.31.2`.
 
 ![Local PDU details](images/local-pdu-details.png)
 
-![Local PDU observations](images/local-pdu-table.png)
+The packet contains the following addressing information:
+
+| Field | Observed value |
+|---|---|
+| Device receiving the reply | `172.16.31.3` |
+| Source IPv4 address | `172.16.31.2` |
+| Destination IPv4 address | `172.16.31.3` |
+| Source MAC address | `000C.85CC.1DA7` |
+| Destination MAC address | `0060.7036.2849` |
+| ICMP message type | `0` — Echo Reply |
+| Network interface | `FastEthernet0` |
+
+**Observation:** The echo reply has the source and destination IP addresses reversed compared with the original echo request. The Ethernet header also identifies the sender and receiver on the local link. This demonstrates how ICMP and Ethernet addressing work together during local network communication.
 
 ## Part 2: Gather PDU Information for Remote Network Communication
 
@@ -94,16 +103,22 @@ For remote communication, the destination belongs to a different IP network. The
 
 As the packet moves between networks, the source and destination MAC addresses change for each Ethernet link. The source and destination IPv4 addresses generally remain the same from the original sender to the final destination, unless a feature such as NAT modifies them.
 
-For the initial packet from PC `172.16.31.3` to host `10.10.10.2`, the IP addressing is:
+### Remote Network: Outbound PDU Details at the Source PC
 
-| Field | Value |
+The PDU Information window shows the ICMP Echo Request created by PC `172.16.31.3` for the remote destination `10.10.10.2`.
+
+![Remote PDU details](images/remote-pdu-details.png)
+
+| Field | Observed value |
 |---|---|
 | Source IPv4 address | `172.16.31.3` |
 | Destination IPv4 address | `10.10.10.2` |
-| Destination MAC on the first link | MAC address of the default gateway interface |
-| MAC addresses on later links | Depend on the devices on each link |
+| Source MAC address | `0060.7036.2849` |
+| Destination MAC address | `00D0.BA8E.741A` |
+| ICMP message type | `8` — Echo Request |
+| Outgoing interface | `FastEthernet0` |
 
-![Remote PDU details](images/remote-pdu-details.png)
+**Observation:** Since `10.10.10.2` belongs to a different IP network, the source PC forwards the Ethernet frame to its default gateway. The destination IPv4 address remains that of the remote host, while the destination MAC address identifies the next-hop router on the local link.
 
 ![Remote PDU observations](images/remote-pdu-table.png)
 
