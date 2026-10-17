@@ -66,13 +66,13 @@ In this lab, the wireless router acts as the DHCP server.
 
 1. Open the router's basic setup page at `http://192.168.5.1`.
 2. Locate the DHCP Server settings.
-3. Set the starting IP address to `192.168.5.126`.
+3. Set the starting IP address to `192.168.5.100`.
 4. Set the maximum number of DHCP users as required by the lab.
 5. Save the settings.
 6. Renew PC0's address by selecting **Static** and then **DHCP**.
 7. Use `ipconfig` in the Command Prompt to check the assigned address.
 
-**Expected PC0 IP address:** `192.168.5.126`
+**Expected PC0 IP address:** `192.168.5.101`
 
 ### Part 5: Enable DHCP on the Other PCs
 
@@ -82,7 +82,7 @@ In this lab, the wireless router acts as the DHCP server.
 4. Record the assigned IP address.
 5. Repeat the same steps on PC2.
 
-**Expected PC1 IP address:** `192.168.5.127`
+**Expected PC1 IP address:** `192.168.5.102`
 
 PC2 should also receive an address automatically from the configured DHCP pool. Record the actual address displayed in Packet Tracer.
 
@@ -99,7 +99,7 @@ PC2 should also receive an address automatically from the configured DHCP pool. 
 4. Ping PC1:
 
    ```text
-   ping 192.168.5.127
+   ping 192.168.5.102
    ```
 
 5. Check whether the ping requests receive replies.
@@ -111,9 +111,9 @@ Note: The first ping can occasionally time out while address resolution takes pl
 | Device | Expected IPv4 address |
 |---|---|
 | Router | `192.168.5.1` |
-| PC0 | `192.168.5.126` |
-| PC1 | `192.168.5.127` |
-| PC2 | Record the address assigned by DHCP |
+| PC0 | `192.168.5.101` |
+| PC1 | `192.168.5.102` |
+| PC2 | `192.168.5.103` |
 
 The router should assign IP addresses automatically from the configured DHCP pool, and the PCs should be able to communicate with the router and other PCs.
 
