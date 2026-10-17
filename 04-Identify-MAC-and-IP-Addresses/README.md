@@ -27,13 +27,13 @@ This Cisco Packet Tracer lab demonstrates how MAC addresses and IPv4 addresses a
 
 The first topology contains two PCs on the same local network, connected through a switch. The activity uses PC `172.16.31.3` to ping PC `172.16.31.2`.
 
-![Local network topology](images/local-network-topology.png)
+![Local network topology](images/topology.png)
 
 ### Part 2: Remote Network Communication
 
 The second topology contains devices on different IP networks connected through switches, an access point, and a router. The activity uses PC `172.16.31.3` to ping the remote host `10.10.10.2`.
 
-![Remote network topology](images/remote-network-topology.png)
+![Remote network topology](images/topology.png)
 
 ## Part 1: Gather PDU Information for Local Network Communication
 
