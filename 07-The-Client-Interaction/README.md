@@ -65,8 +65,6 @@ Packet Tracer allows this exchange to be observed through its Simulation Mode an
 3. Read the descriptions shown below the OSI layers.
 4. Examine other DNS and HTTP events to understand the full exchange.
 
-![OSI Model Details](images/06-osi-model-details.png)
-
 ## Key Concepts
 
 - **Client-server communication:** A client requests a service and a server responds.
