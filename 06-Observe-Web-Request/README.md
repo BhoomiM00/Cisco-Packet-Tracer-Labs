@@ -59,7 +59,7 @@ The domain name is resolved to an IP address using DNS before the client sends t
 4. Read the webpage displayed in the browser.
 
 ### 2. Access the Website
-![Webpage in Browser](images/02-webpage-browser.png)
+![Webpage in Browser](images/02-webpage-on-client.png)
 
 ### Part 3: View the HTML Code
 
@@ -94,7 +94,7 @@ The web server stores the HTML content, and the browser interprets this markup t
 
 **Screenshots:**
 ### 4. Observe Simulation Events
-![Simulation Event List](images/04-simulation-event-list.png)
+![Simulation Event List](images/04-simulation-panel.png)
 
 ### 5. Complex PDU Details
 ![Complex PDU Details](images/05-complex-pdu-settings.png)
