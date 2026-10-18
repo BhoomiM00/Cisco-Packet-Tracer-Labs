@@ -27,6 +27,10 @@ HTTP (Hypertext Transfer Protocol) is used to request and transfer webpage conte
 
 HTML (Hypertext Markup Language) defines the structure and content displayed by a web browser.
 
+## Network Topology
+
+![Observe Web Request Topology](images/topology.png)
+
 ## Procedure
 
 ### Part 1: Verify Connectivity to the Web Server
@@ -44,7 +48,8 @@ HTML (Hypertext Markup Language) defines the structure and content displayed by 
 
 The domain name is resolved to an IP address using DNS before the client sends the ping requests.
 
-**Screenshot:** `images/01-ping-web-server.png`
+### 1. Ping the Web Server
+![Ping Web Server](images/01-ping-web-server.png)
 
 ### Part 2: Connect to the Web Server
 
@@ -53,7 +58,8 @@ The domain name is resolved to an IP address using DNS before the client sends t
 3. Press Enter to load the webpage.
 4. Read the webpage displayed in the browser.
 
-**Screenshot:** `images/02-webpage-on-client.png`
+### 2. Access the Website
+![Webpage in Browser](images/02-webpage-browser.png)
 
 ### Part 3: View the HTML Code
 
@@ -66,7 +72,8 @@ The domain name is resolved to an IP address using DNS before the client sends t
 
 The web server stores the HTML content, and the browser interprets this markup to display the webpage.
 
-**Screenshot:** `images/03-server-html-code.png`
+### 3. View Server HTML Code
+![Server HTML Code](images/03-server-html-code.png)
 
 ### Part 4: Observe Traffic Between the Client and Web Server
 
@@ -86,9 +93,14 @@ The web server stores the HTML content, and the browser interprets this markup t
 14. Examine the Event List and observe the packets travelling between the client and server.
 
 **Screenshots:**
-- `images/04-simulation-panel.png`
-- `images/05-complex-pdu-settings.png`
-- `images/06-http-traffic-events.png`
+### 4. Observe Simulation Events
+![Simulation Event List](images/04-simulation-event-list.png)
+
+### 5. Complex PDU Details
+![Complex PDU Details](images/05-complex-pdu-settings.png)
+
+### 5. Inspect HTTP Traffic Events
+![Inspect HTTP Traffic Events](images/06-http-traffic-events.png)
 
 ## Observations
 
