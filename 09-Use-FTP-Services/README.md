@@ -16,7 +16,7 @@ This lab demonstrates how to use File Transfer Protocol (FTP) to upload, downloa
 
 The topology consists of a client PC connected to an FTP server through a network. The PC uses FTP commands to transfer files between the client and server.
 
-![FTP Services network topology](images/04-topology.png)
+![FTP Services network topology](images/topology.png)
 
 ## Addressing Table
 
