@@ -11,6 +11,12 @@ This lab demonstrates how to establish a remote connection to a router using Tel
 - Understand why Telnet access may be rejected.
 - Establish a secure remote connection using SSH.
 
+  ## Network Topology
+
+The following topology shows the network setup used in this lab, where PCs connect to the HQ router to test connectivity and remote access using Telnet and SSH.
+
+![Network topology](images/topology.png)
+
 ## Network Addressing
 
 | Device | Interface | IP Address | Subnet Mask |
