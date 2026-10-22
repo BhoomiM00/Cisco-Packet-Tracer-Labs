@@ -32,7 +32,6 @@ The topology contains routers, switches, and end devices on multiple networks. P
 | 172.16.31.3 | F0 | 0060.7036.2849 | F0/2 |
 | 172.16.31.4 | G0 | 0002.1640.8D75 | F0/3 |
 
-![Addressing Table](images/01-addressing-table.png)
 
 ## Part 1: Examine an ARP Request
 
