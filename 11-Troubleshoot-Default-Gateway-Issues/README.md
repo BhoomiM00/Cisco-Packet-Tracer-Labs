@@ -26,7 +26,7 @@ During testing, PC1 could not reach S1 or R1, PC3 could reach S1 but not R1, and
 
 The topology used for this activity is shown below.
 
-![Network Topology](images/01-topology.png)
+![Network Topology](images/topology.png)
 
 ## 5. Initial Connectivity Testing
 
@@ -50,7 +50,7 @@ The initial tests showed that different devices experienced different connectivi
 
 PC1 had an incorrect IP address configured.
 
-- **Incorrect IP address:** `192.168.11.11`
+- **Incorrect IP address:** `192.168.11.10`
 - **Corrected IP address:** `192.168.10.10`
 
 ### Correction
@@ -58,7 +58,7 @@ PC1 had an incorrect IP address configured.
 1. Open PC1 in Cisco Packet Tracer.
 2. Select **Desktop**.
 3. Open **IP Configuration**.
-4. Change the IP address from `192.168.11.11` to `192.168.10.10`.
+4. Change the IP address from `192.168.11.10` to `192.168.10.10`.
 5. Keep the other configuration values consistent with the lab's addressing requirements.
 6. Retest connectivity to S1 and R1 using the `ping` command.
 
@@ -95,18 +95,18 @@ After correcting PC1's IP address and PC4's default gateway, repeat the connecti
 Use the following command from each PC's Command Prompt:
 
 ```text
-ping <destination-IP-address>
+ping 192.168.10.11
 ```
 
-Replace `<destination-IP-address>` with the actual IP address of S1 or R1.
+Replace `192.168.10.11` with the actual IP address of S1 or R1.
 
 Record the results of the new tests in the table below.
 
 | Source Device | Test to S1 | Test to R1 |
 |---|---|---|
-| PC1 | Record actual result | Record actual result |
-| PC3 | Record actual result | Record actual result |
-| PC4 | Record actual result | Record actual result |
+| PC1 | successful | successful |
+| PC3 | successful | successful |
+| PC4 | successful | successful |
 
 ![Connectivity Tests After Corrections](images/06-post-correction-connectivity-tests.png)
 
@@ -116,7 +116,7 @@ Record the results of the new tests in the table below.
 
 | Device | Configuration Error | Correction |
 |---|---|---|
-| PC1 | Incorrect IP address: `192.168.11.11` | Changed to `192.168.10.10` |
+| PC1 | Incorrect IP address: `192.168.11.10` | Changed to `192.168.10.10` |
 | PC4 | Incorrect default gateway: `192.168.1.1` | Changed to `192.168.11.1` |
 
 PC3's test to R1 also failed during initial testing. No configuration change for PC3 was reported, so its connectivity should be checked again if the problem persists.
